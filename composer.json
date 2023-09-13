@@ -1,5 +1,5 @@
 {
-    "name": "georgehadjisavva/elevenlabs-api-client",
+    "name": "tvup/laravel-elevenlabs-client",
     "description": "Wrapper client for elevenlabs api",
     "version": "1.0.0",
     "type": "library",
