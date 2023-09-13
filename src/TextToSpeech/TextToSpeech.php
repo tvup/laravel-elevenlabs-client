@@ -88,7 +88,7 @@ class TextToSpeech implements TextToSpeechInterface
      * @param ?string $model_id of the model that will be used
      * @param ?array  $voice_settings : Voice settings overriding stored setttings for the given voice
      *
-     * @return array status,message
+     * @return string|array audio file contents or error response with status and message
      *
      * See : https://docs.elevenlabs.io/api-reference/text-to-speech
      */
@@ -96,7 +96,7 @@ class TextToSpeech implements TextToSpeechInterface
     string $voice_id = VoicesEnum::RACHEL,
     ?bool $optimize_latency = LatencyOptimizationEnum::DEFAULT,
     ?string $model_id = ModelsEnum::ELEVEN_MONOLINGUAL_V1,
-    ?array $voice_settings = []) : array
+    ?array $voice_settings = []) : string|array
     {
         try {
 
